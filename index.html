@@ -71,6 +71,8 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:va
 .nav ul a{text-decoration:none;color:var(--on-river-muted)}
 .nav ul a:hover{color:var(--on-river)}
 .nav ul a,.brand span{white-space:nowrap}
+.nav-actions>*{flex-shrink:0}.brand{min-width:0}
+@media (max-width:420px){.brand>span{display:none}.nav{gap:8px}}
 @media (max-width:1240px){.nav ul{gap:14px;font-size:.88rem}.brand small{display:none}}
 @media (max-width:1120px){.nav ul{display:none}}
 
