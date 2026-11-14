@@ -196,7 +196,13 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:va
 @media (max-width:1000px){.card{flex-basis:calc((100% - 36px)/3)}}
 @media (max-width:760px){.card{flex-basis:calc((100% - 18px)/2)}}
 @media (max-width:520px){.card{flex-basis:82%}.arrow{display:none}}
-
+.nav-actions{display:flex;align-items:center;gap:10px}
+.pos-link{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;border:1.5px solid color-mix(in srgb,var(--on-river) 35%,transparent);color:var(--on-river);text-decoration:none;font-size:.85rem;font-weight:600}
+.pos-link svg{width:18px;height:18px}
+.pos-link:hover{border-color:var(--accent);color:var(--accent)}
+@media (max-width:480px){.pos-link span{display:none}.pos-link{padding:7px}.brand small{display:none}}
+.btn{white-space:nowrap}
+footer a{color:inherit}
 footer{background:var(--river-deep);color:var(--on-river-muted);font-size:.88rem;border-top:1px solid color-mix(in srgb,var(--on-river) 12%,transparent)}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:22px 96px}
 
@@ -222,7 +228,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
       <li><a href="#faq">ຄຳຖາມທີ່ພົບເລື້ອຍ</a></li>
       <li><a href="#contact">ຕິດຕໍ່</a></li>
     </ul>
-    <a class="btn btn-gold btn-sm" href="https://wa.me/8562054097877" target="_blank" rel="noopener">ປຶກສາຟຣີ</a>
+    <div class="nav-actions">
+      <a class="pos-link" href="https://pro-ads-pos.pages.dev" target="_blank" rel="noopener" title="ລະບົບຂາຍໜ້າຮ້ານ Pro Ads POS"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="12" rx="2"/><path d="M7 7h6M7 11h3M8 21h8M12 15v6"/></svg><span>POS</span></a>
+      <a class="btn btn-gold btn-sm" href="https://wa.me/8562054097877" target="_blank" rel="noopener">ປຶກສາຟຣີ</a>
+    </div>
   </nav>
 </header>
 
@@ -458,7 +467,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 <footer>
   <div class="wrap">
     <span>© 2026 Pro Ads Laos. ສະຫງວນລິຂະສິດ.</span>
-    <span>ຜູ້ໃຫ້ບໍລິການອິດສະຫຼະ ບໍ່ມີສ່ວນກ່ຽວຂ້ອງກັບ Meta ຫຼື TikTok.</span>
+    <span><a href="https://pro-ads-pos.pages.dev" target="_blank" rel="noopener">ລະບົບ POS ຂອງ Pro Ads</a> · ຜູ້ໃຫ້ບໍລິການອິດສະຫຼະ ບໍ່ມີສ່ວນກ່ຽວຂ້ອງກັບ Meta ຫຼື TikTok.</span>
   </div>
 </footer>
 
