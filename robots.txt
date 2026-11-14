@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://phetxavanh2-svg.github.io/Pro-Ads-Laos-website/sitemap.xml
