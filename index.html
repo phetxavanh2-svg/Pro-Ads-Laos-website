@@ -454,11 +454,11 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
     </div>
     <div class="channels">
       <div class="ch"><span class="lbl">Line Official</span><span class="val">@proadslaos.com</span>
-        <div class="acts"><a class="btn btn-gold btn-sm" href="https://line.me/R/ti/p/@proadslaos.com" target="_blank" rel="noopener">ເພີ່ມເພື່ອນ</a><button class="copy" type="button" data-copy="@proadslaos.com">ສຳເນົາ</button></div></div>
+        <div class="acts"><a class="btn btn-gold btn-sm" href="https://line.me/R/ti/p/@proadslaos.com" target="_blank" rel="noopener">ແອັດເລີຍ</a><button class="copy" type="button" data-copy="@proadslaos.com">ຄັດລ໋ອກ</button></div></div>
       <div class="ch"><span class="lbl">WhatsApp</span><span class="val">020 54 097 877</span>
-        <div class="acts"><a class="btn btn-gold btn-sm" href="https://wa.me/8562054097877" target="_blank" rel="noopener">ສົ່ງຂໍ້ຄວາມ</a><button class="copy" type="button" data-copy="+8562054097877">ສຳເນົາ</button></div></div>
+        <div class="acts"><a class="btn btn-gold btn-sm" href="https://wa.me/8562054097877" target="_blank" rel="noopener">ສົ່ງຂໍ້ຄວາມ</a><button class="copy" type="button" data-copy="+8562054097877">ຄັດລ໋ອກ</button></div></div>
       <div class="ch"><span class="lbl">ໂທຫາພວກເຮົາ</span><span class="val">+856 20 54 097 877</span>
-        <div class="acts"><a class="btn btn-gold btn-sm" href="tel:+8562054097877">ໂທເລີຍ</a><button class="copy" type="button" data-copy="+856 20 54 097 877">ສຳເນົາ</button></div></div>
+        <div class="acts"><a class="btn btn-gold btn-sm" href="tel:+8562054097877">ໂທເລີຍ</a><button class="copy" type="button" data-copy="+856 20 54 097 877">ຄັດລ໋ອກ</button></div></div>
     </div>
   </div>
 </section>
@@ -481,7 +481,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 document.querySelectorAll('.copy').forEach(function(b){
   b.addEventListener('click',function(){
     var t=b.getAttribute('data-copy'),o=b.textContent;
-    function done(){b.textContent='ສຳເນົາແລ້ວ';setTimeout(function(){b.textContent=o},1600)}
+    function done(){b.textContent='ຄັດລ໋ອກແລ້ວ';setTimeout(function(){b.textContent=o},1600)}
     function sel(){var v=b.closest('.ch').querySelector('.val');var r=document.createRange();r.selectNodeContents(v);var g=getSelection();g.removeAllRanges();g.addRange(r)}
     try{navigator.clipboard.writeText(t).then(done,sel)}catch(e){sel()}
   });
