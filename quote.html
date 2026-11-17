@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="lo">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ຂໍໃບສະເໜີລາຄາ | Pro Ads Lao</title>
+<meta name="description" content="ເລືອກບໍລິການ ແລ້ວຮັບໃບສະເໜີລາຄາ PDF ຈາກ Pro Ads Lao ທັນທີ.">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao+Looped:wght@600;700;800&family=Noto+Sans+Lao:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap">
+<style>
+:root{--bg:#f4f7ff;--surface:#fff;--ink:#0b1440;--muted:#4a5684;--line:#d8e0f5;--navy:#0b1f6b;--blue:#0d47a1;--link:#0055ff;--accent:#00d4ff;--ok:#1d8a5b;--warn:#c2412d}
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans Lao","Poppins",system-ui,sans-serif;line-height:1.6}
+button,input,textarea,select{font:inherit;color:inherit}
+a{color:var(--link)}
+.top{background:var(--navy);color:#fff}
+.top .in{max-width:1200px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;gap:12px;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:Poppins,sans-serif;font-weight:700;letter-spacing:.3px}
+.brand img{width:26px;height:auto}
+.back{color:#b9c7f2;text-decoration:none;font-size:.95rem}
+.wrap{max-width:1200px;margin:0 auto;padding:28px 16px 64px}
+h1{font-family:"Noto Sans Lao Looped","Noto Sans Lao",sans-serif;font-size:clamp(1.6rem,3.6vw,2.3rem);margin:0 0 6px;line-height:1.3}
+.lead{color:var(--muted);margin:0 0 22px}
+.demo{background:#fff6e6;border:1px solid #f0c27a;color:#7a4a00;border-radius:12px;padding:10px 14px;margin:0 0 20px;font-size:.95rem}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:28px;align-items:start}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px}
+.card h2{font-size:1.1rem;margin:0 0 12px}
+label{display:block;font-weight:600;font-size:.95rem;margin:12px 0 6px}
+input[type=text],input[type=tel],textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:#fff}
+input:focus,textarea:focus{outline:2px solid var(--link);outline-offset:1px}
+textarea{min-height:80px;resize:vertical}
+.svc{display:grid;gap:8px;margin-top:6px}
+.svc-row{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:#fff;cursor:pointer}
+.svc-row.on{border-color:var(--link);background:#eef4ff}
+.svc-row input[type=checkbox]{width:20px;height:20px;accent-color:var(--link)}
+.svc-name{font-weight:600}
+.svc-meta{font-size:.85rem;color:var(--muted)}
+.qty{display:flex;align-items:center;gap:4px}
+.qty button{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:#fff;cursor:pointer}
+.qty input{width:44px;text-align:center;padding:5px;border:1px solid var(--line);border-radius:8px}
+.cat{font-size:.8rem;font-weight:700;color:var(--blue);margin:14px 0 2px;text-transform:uppercase;letter-spacing:.4px}
+.hp{position:absolute;left:-9999px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;border:0;font-weight:700;cursor:pointer;text-decoration:none}
+.btn-main{background:var(--accent);color:var(--navy);width:100%;margin-top:18px;font-size:1.05rem}
+.btn-main[disabled]{opacity:.6;cursor:wait}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--ink)}
+.msg{margin-top:12px;font-size:.95rem}
+.msg.err{color:var(--warn)}
+.result{display:none;margin-top:16px;padding:16px;border-radius:12px;background:#e9f8f0;border:1px solid #9fd8bb}
+.result.show{display:block}
+.result .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.sticky{position:sticky;top:16px}
+/* quote document preview */
+.qdoc{background:#fff;border-radius:6px;box-shadow:0 18px 50px rgba(11,20,64,.16);overflow:hidden;font-size:13px;color:#1b2240;aspect-ratio:1/1.414;display:flex;flex-direction:column}
+.qh{background:linear-gradient(115deg,#06135e 0%,#0b1f6b 58%,#0d3a9e 58.2%,#0d47a1 100%);color:#fff;padding:22px 24px;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.qh .lg{display:flex;align-items:center;gap:10px}
+.qh .lg img{width:30px}
+.qh .co{font-family:Poppins,sans-serif;font-weight:700;font-size:18px;line-height:1.1}
+.qh .tag{font-size:9.5px;color:#b9c7f2;font-family:Poppins,sans-serif}
+.qh .tt{text-align:right}
+.qh .tt b{display:block;font-size:22px;line-height:1.2}
+.qh .tt span{display:block;font-family:Poppins,sans-serif;font-weight:700;color:var(--accent);font-size:11px;letter-spacing:2px}
+.qh .tt small{display:block;font-size:11px;margin-top:2px}
+.qb{padding:18px 24px;flex:1;display:flex;flex-direction:column}
+.parties{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.parties h4{margin:0 0 4px;color:var(--navy);font-size:14px}
+.parties p{margin:0;font-size:11.5px;line-height:1.55;word-break:break-word}
+.qdate{margin:14px 0 10px;color:var(--blue);font-weight:700;font-size:12.5px}
+table.qt{width:100%;border-collapse:collapse;font-size:11.5px}
+.qt th{background:var(--blue);color:#fff;font-weight:600;padding:7px 8px;text-align:left}
+.qt td{border-bottom:1px solid #e1e7f6;padding:7px 8px;vertical-align:top}
+.qt .r{text-align:right;white-space:nowrap}
+.qt .det{display:block;color:#6a7398;font-size:10px}
+.qt .empty td{color:#9aa3c4;text-align:center;padding:18px}
+.qsum{margin-top:12px;background:var(--navy);color:#fff;display:flex;justify-content:space-between;padding:9px 12px;font-weight:700;font-size:14px}
+.qnote{margin-top:12px;font-size:10.5px;color:#4a5684}
+.qnote b{color:var(--navy)}
+.qnote ul{margin:4px 0 0;padding-left:16px}
+.qf{margin-top:auto;background:linear-gradient(110deg,#fff 0 22%,#0b1f6b 22.2%);color:#fff;text-align:right;padding:12px 24px;font-weight:700;font-size:14px}
+.stamp{display:none;position:absolute}
+@media(max-width:900px){.grid{grid-template-columns:minmax(0,1fr)}.sticky{position:static}.qdoc{aspect-ratio:auto}}
+@media print{
+  @page{size:A4;margin:0}
+  html,body{background:#fff;margin:0;height:auto}
+  .top,.wrap>*:not(.grid),.grid>.card,.no-print{display:none!important}
+  .wrap{padding:0;max-width:none}
+  .grid{display:block}
+  .sticky{position:static}
+  .qdoc{box-shadow:none;border-radius:0;width:210mm;height:296mm;overflow:hidden;aspect-ratio:auto;font-size:12.5px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<div class="top"><div class="in">
+  <a class="brand" href="./"><img src="media/logo-mark.png" alt="">PRO ADS LAOS</a>
+  <a class="back" href="./">← ກັບໜ້າຫຼັກ</a>
+</div></div>
+
+<main class="wrap">
+  <h1>ຂໍໃບສະເໜີລາຄາ</h1>
+  <p class="lead">ເລືອກບໍລິການທີ່ຕ້ອງການ ແລ້ວກົດ "ອອກໃບສະເໜີລາຄາ". ທ່ານຈະໄດ້ຮັບໄຟລ໌ PDF ທັນທີ ແລະ ທີມງານຈະຕິດຕໍ່ກັບ.</p>
+  <p class="demo" id="demo" hidden>ໂໝດຕົວຢ່າງ: ລະບົບຍັງບໍ່ໄດ້ເຊື່ອມກັບ Google Sheet. ລາຄາທີ່ເຫັນເປັນລາຄາຕົວຢ່າງ ແລະ ຍັງບໍ່ບັນທຶກຂໍ້ມູນ.</p>
+
+  <div class="grid">
+    <form class="card" id="qform" novalidate>
+      <h2>ຂໍ້ມູນຂອງທ່ານ</h2>
+      <label for="name">ຊື່ ຫຼື ຊື່ຮ້ານ / ແບຣນ *</label>
+      <input type="text" id="name" required maxlength="120" autocomplete="organization">
+      <label for="phone">ເບີໂທ / WhatsApp *</label>
+      <input type="tel" id="phone" required maxlength="40" autocomplete="tel" placeholder="020 xxxx xxxx">
+      <label for="address">ທີ່ຢູ່ (ບໍ່ບັງຄັບ)</label>
+      <input type="text" id="address" maxlength="200">
+      <input type="text" class="hp" id="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <h2 style="margin-top:22px">ເລືອກບໍລິການ</h2>
+      <div class="svc" id="svc"><p class="svc-meta">ກຳລັງໂຫຼດລາຍການບໍລິການ…</p></div>
+
+      <label for="note">ໝາຍເຫດ (ບໍ່ບັງຄັບ)</label>
+      <textarea id="note" maxlength="500" placeholder="ເຊັ່ນ ລິ້ງເພຈ, ງົບໂຄສະນາທີ່ຕັ້ງໄວ້, ວັນທີຕ້ອງການເລີ່ມ"></textarea>
+
+      <button class="btn btn-main" id="submit" type="submit">ອອກໃບສະເໜີລາຄາ</button>
+      <div class="msg" id="msg" role="status" aria-live="polite"></div>
+      <div class="result" id="result">
+        <b id="rtitle">ສ້າງໃບສະເໜີລາຄາແລ້ວ</b>
+        <div id="rtext"></div>
+        <div class="actions">
+          <a class="btn btn-main" id="rpdf" href="#" target="_blank" rel="noopener" style="width:auto;margin:0">ເປີດ PDF</a>
+          <button class="btn btn-ghost" type="button" id="rprint">ພິມ / ບັນທຶກເປັນ PDF</button>
+          <a class="btn btn-ghost" id="rwa" href="#" target="_blank" rel="noopener">ສົ່ງຫາທີມງານທາງ WhatsApp</a>
+        </div>
+      </div>
+    </form>
+
+    <div class="sticky">
+      <article class="qdoc" id="qdoc" aria-label="ຕົວຢ່າງໃບສະເໜີລາຄາ">
+        <div class="qh">
+          <div class="lg"><img src="media/logo-mark.png" alt=""><div><div class="co">PRO ADS LAOS</div><div class="tag">Growth up Your Business Together</div></div></div>
+          <div class="tt"><b>ໃບສະເໜີລາຄາ</b><span>QUOTATION</span><small>ເລກທີ: <i id="pno" style="font-style:normal">QT-xxxx</i></small></div>
+        </div>
+        <div class="qb">
+          <div class="parties">
+            <div><h4>ຈາກ:</h4><p>Pro Ads Lao<br>www.proadslaosdigital.com<br>+85620 789 996 88 · +85620 549 078 77<br>Saynumngern Village, Xaythany District, Vientiane Capital</p></div>
+            <div><h4>ສະເໜີໃຫ້:</h4><p><span id="pname">-</span><br>ໂທ: <span id="pphone">-</span><br><span id="paddr"></span></p></div>
+          </div>
+          <div class="qdate">ວັນທີ: <span id="pdate"></span> &nbsp;·&nbsp; ໃຊ້ໄດ້ຮອດ: <span id="pvalid"></span></div>
+          <table class="qt">
+            <thead><tr><th style="width:26px">#</th><th>ລາຍລະອຽດ</th><th class="r">ຈຳນວນ</th><th class="r">ລາຄາ</th><th class="r">ລວມ</th></tr></thead>
+            <tbody id="prows"><tr class="empty"><td colspan="5">ເລືອກບໍລິການທາງຊ້າຍ</td></tr></tbody>
+          </table>
+          <div class="qsum"><span>ລວມທັງໝົດ</span><span id="ptotal">0 ₭</span></div>
+          <div class="qnote"><b>ໝາຍເຫດ:</b> <span id="pnote">-</span>
+            <ul><li>ລາຄານີ້ໃຊ້ໄດ້ຮອດວັນທີ <span class="pvalid2"></span>.</li><li>ຄ່າໂຄສະນາ (ງົບຍິງແອັດ) ຄິດໄລ່ແຍກຕາມການໃຊ້ຈິງ, ຖ້າບໍ່ໄດ້ລະບຸໄວ້ໃນລາຍການ.</li><li>ເລີ່ມວຽກຫຼັງຈາກຢືນຢັນໃບສະເໜີລາຄາ ແລະ ຊຳລະເງິນຕາມທີ່ຕົກລົງ.</li></ul>
+          </div>
+        </div>
+        <div class="qf">ຂອບໃຈທີ່ໄວ້ວາງໃຈ ແລະ ໃຊ້ບໍລິການຂອງພວກເຮົາ</div>
+      </article>
+    </div>
+  </div>
+</main>
+
+<script>
+// ໃສ່ URL ຂອງ Google Apps Script Web App ທີ່ນີ້ ຫຼັງຈາກ Deploy (ລົງທ້າຍດ້ວຍ /exec)
+var SCRIPT_URL = '';
+var WHATSAPP = '8562054907877';
+var VALID_DAYS = 7;
+
+var DEMO_SERVICES = [
+  {id:'S01',category:'ເພຈ',name:'ຄ່າດູແລເພຈລາຍເດືອນ',detail:'ວາງແຜນຄອນເທັນ, ອອກແບບ, ໂພດ ແລະ ລາຍງານຜົນ',price:3000000,unit:'ເດືອນ'},
+  {id:'S02',category:'ໂຄສະນາ',name:'ຄ່າບໍລິການຍິງແອັດ',detail:'ຕັ້ງຄ່າ ແລະ ດູແລແຄມເປນໂຄສະນາ (ບໍ່ລວມງົບແອັດ)',price:1000000,unit:'ເດືອນ'},
+  {id:'S03',category:'ໄລ້ສົດ',name:'ຍິງແອັດໄລ້ສົດ',detail:'ຕັ້ງຄ່າ ແລະ ດູແລໂຄສະນາໄລ້ສົດ',price:500000,unit:'ຄັ້ງ'},
+  {id:'S04',category:'Facebook',name:'ແກ້ໄຂເຟສບຸກຖືກປິດ / ຖືກລັອກ',detail:'ຈ່າຍເງິນຫຼັງເຫັນຜົນ',price:1500000,unit:'ບັນຊີ'},
+  {id:'S05',category:'ເພຈ',name:'ກູ້ເພຈ',detail:'ກູ້ຄືນສິດຜູ້ດູແລເພຈ',price:2000000,unit:'ເພຈ'},
+  {id:'S06',category:'ບັນຊີໂຄສະນາ',name:'ຜູກບັດ ແລະ ຕັ້ງຄ່າພາສີ (Tax)',detail:'ເຊັດອັບການເງິນ ແລະ ພາສີ Facebook Ads / Creator',price:500000,unit:'ບັນຊີ'},
+  {id:'S07',category:'ບັນຊີໂຄສະນາ',name:'ຢືນຢັນບັນຊີໂຄສະນາ',detail:'',price:800000,unit:'ບັນຊີ'},
+  {id:'S08',category:'Google',name:'ປັກໝຸດ Google Maps',detail:'ລວມປັບ Google Business ໃຫ້ຕິດການຄົ້ນຫາ',price:500000,unit:'ໝຸດ'},
+  {id:'S09',category:'ສອນ',name:'ຄອສສອນຍິງແອັດໂຄສະນາ',detail:'ຈາກພື້ນຖານ ສູ່ມືອາຊີບ',price:1500000,unit:'ຄົນ'},
+  {id:'S10',category:'ຖ່າຍພາບ',name:'ບິນໂດຣນ',detail:'ຖ່າຍພາບ ແລະ ວິດີໂອທາງອາກາດ',price:1000000,unit:'ງານ'}
+];
+
+var services = [], state = {};
+var $ = function(id){return document.getElementById(id)};
+var MONTHS = ['ມັງກອນ','ກຸມພາ','ມີນາ','ເມສາ','ພຶດສະພາ','ມິຖຸນາ','ກໍລະກົດ','ສິງຫາ','ກັນຍາ','ຕຸລາ','ພະຈິກ','ທັນວາ'];
+function money(n){return Math.round(n||0).toString().replace(/\B(?=(\d{3})+(?!\d))/g,',')+' ₭'}
+function ldate(d){return d.getDate()+' '+MONTHS[d.getMonth()]+' '+d.getFullYear()}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+
+function renderServices(){
+  var box=$('svc'),html='',last='',order=[];
+  services.forEach(function(s){if(order.indexOf(s.category)<0)order.push(s.category)});
+  services=services.slice().sort(function(a,b){return order.indexOf(a.category)-order.indexOf(b.category)});
+  services.forEach(function(s){
+    if(s.category!==last){html+='<div class="cat">'+esc(s.category)+'</div>';last=s.category}
+    html+='<label class="svc-row" data-id="'+esc(s.id)+'"><input type="checkbox" value="'+esc(s.id)+'">'+
+      '<span><span class="svc-name">'+esc(s.name)+'</span><br><span class="svc-meta">'+money(s.price)+(s.unit?' / '+esc(s.unit):'')+(s.detail?' · '+esc(s.detail):'')+'</span></span>'+
+      '<span class="qty"><button type="button" data-d="-1" aria-label="ຫຼຸດ">−</button><input type="number" min="1" max="999" value="1" aria-label="ຈຳນວນ"><button type="button" data-d="1" aria-label="ເພີ່ມ">+</button></span></label>';
+  });
+  box.innerHTML=html||'<p class="svc-meta">ບໍ່ມີລາຍການບໍລິການ</p>';
+  box.querySelectorAll('.svc-row').forEach(function(row){
+    var id=row.getAttribute('data-id'),cb=row.querySelector('input[type=checkbox]'),q=row.querySelector('input[type=number]');
+    function sync(){var n=Math.max(1,Math.min(999,parseInt(q.value,10)||1));q.value=n;if(cb.checked)state[id]=n;else delete state[id];row.classList.toggle('on',cb.checked);preview()}
+    cb.addEventListener('change',sync);
+    q.addEventListener('input',function(){if(!cb.checked)cb.checked=true;sync()});
+    row.querySelectorAll('.qty button').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();q.value=(parseInt(q.value,10)||1)+Number(b.getAttribute('data-d'));cb.checked=true;sync()})});
+    q.addEventListener('click',function(e){e.preventDefault()});
+  });
+}
+
+function lines(){return services.filter(function(s){return state[s.id]}).map(function(s){return {s:s,qty:state[s.id],total:s.price*state[s.id]}})}
+
+function preview(){
+  var now=new Date(),valid=new Date(now.getTime()+VALID_DAYS*864e5);
+  $('pname').textContent=$('name').value.trim()||'-';
+  $('pphone').textContent=$('phone').value.trim()||'-';
+  $('paddr').textContent=$('address').value.trim();
+  $('pnote').textContent=$('note').value.trim()||'-';
+  $('pdate').textContent=ldate(now);$('pvalid').textContent=ldate(valid);
+  document.querySelectorAll('.pvalid2').forEach(function(e){e.textContent=ldate(valid)});
+  var L=lines(),tot=0,html='';
+  L.forEach(function(l,i){tot+=l.total;html+='<tr><td>'+(i+1)+'</td><td>'+esc(l.s.name)+(l.s.detail?'<span class="det">'+esc(l.s.detail)+'</span>':'')+'</td><td class="r">'+l.qty+(l.s.unit?' '+esc(l.s.unit):'')+'</td><td class="r">'+money(l.s.price)+'</td><td class="r">'+money(l.total)+'</td></tr>'});
+  $('prows').innerHTML=html||'<tr class="empty"><td colspan="5">ເລືອກບໍລິການທາງຊ້າຍ</td></tr>';
+  $('ptotal').textContent=money(tot);
+}
+['name','phone','address','note'].forEach(function(id){$(id).addEventListener('input',preview)});
+
+function load(){
+  if(!SCRIPT_URL){$('demo').hidden=false;services=DEMO_SERVICES;renderServices();preview();return}
+  fetch(SCRIPT_URL+'?action=services').then(function(r){return r.json()}).then(function(d){
+    if(!d.ok)throw new Error(d.error||'load failed');
+    services=d.services||[];if(d.settings&&d.settings.validDays)VALID_DAYS=d.settings.validDays;renderServices();preview();
+  }).catch(function(){$('svc').innerHTML='<p class="msg err">ໂຫຼດລາຍການບໍລິການບໍ່ໄດ້ ກະລຸນາລອງໃໝ່ ຫຼື ທັກຫາທີມງານທາງ WhatsApp.</p>'});
+}
+
+function waLink(no,total){
+  var t='ສະບາຍດີ Pro Ads Lao, ຂ້ອຍຂໍໃບສະເໜີລາຄາ'+(no?' ເລກທີ '+no:'')+'\nຊື່: '+$('name').value.trim()+'\nເບີໂທ: '+$('phone').value.trim()+'\n'+
+    lines().map(function(l){return '- '+l.s.name+' x'+l.qty}).join('\n')+'\nລວມ: '+total;
+  return 'https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(t);
+}
+
+$('qform').addEventListener('submit',function(e){
+  e.preventDefault();
+  var msg=$('msg');msg.className='msg';msg.textContent='';
+  if(!$('name').value.trim()||!$('phone').value.trim()){msg.className='msg err';msg.textContent='ກະລຸນາໃສ່ຊື່ ແລະ ເບີໂທ';return}
+  if(!lines().length){msg.className='msg err';msg.textContent='ກະລຸນາເລືອກບໍລິການຢ່າງໜ້ອຍ 1 ລາຍການ';return}
+  var total=money(lines().reduce(function(a,l){return a+l.total},0));
+  if(!SCRIPT_URL){
+    $('pno').textContent='QT-ຕົວຢ່າງ';
+    $('rtitle').textContent='ຕົວຢ່າງໃບສະເໜີລາຄາ (ຍັງບໍ່ໄດ້ບັນທຶກ)';
+    $('rtext').textContent='ລວມ '+total+'. ກົດ "ພິມ / ບັນທຶກເປັນ PDF" ເພື່ອດາວໂຫຼດ.';
+    $('rpdf').hidden=true;$('rwa').href=waLink('',total);$('result').classList.add('show');return;
+  }
+  var btn=$('submit');btn.disabled=true;btn.textContent='ກຳລັງອອກໃບສະເໜີລາຄາ…';
+  var payload={name:$('name').value.trim(),phone:$('phone').value.trim(),address:$('address').value.trim(),note:$('note').value.trim(),website:$('website').value,
+    items:lines().map(function(l){return {id:l.s.id,qty:l.qty}})};
+  fetch(SCRIPT_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)})
+    .then(function(r){return r.json()}).then(function(d){
+      if(!d.ok)throw new Error(d.error||'error');
+      $('pno').textContent=d.no;
+      $('rtitle').textContent='ສ້າງໃບສະເໜີລາຄາ '+d.no+' ແລ້ວ';
+      $('rtext').textContent='ລວມ '+d.totalText+'. ທີມງານຈະຕິດຕໍ່ກັບໄວໆນີ້.';
+      $('rpdf').hidden=false;$('rpdf').href=d.pdfUrl;$('rwa').href=waLink(d.no,d.totalText);$('result').classList.add('show');
+    }).catch(function(err){msg.className='msg err';msg.textContent='ອອກໃບສະເໜີລາຄາບໍ່ສຳເລັດ: '+err.message+'. ກະລຸນາລອງໃໝ່ ຫຼື ທັກຫາທີມງານທາງ WhatsApp.'})
+    .finally(function(){btn.disabled=false;btn.textContent='ອອກໃບສະເໜີລາຄາ'});
+});
+$('rprint').addEventListener('click',function(){window.print()});
+load();
+</script>
+</body>
+</html>
