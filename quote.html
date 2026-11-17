@@ -52,33 +52,59 @@ textarea{min-height:80px;resize:vertical}
 .result .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
 .sticky{position:sticky;top:16px}
 /* quote document preview */
-.qdoc{background:#fff;border-radius:6px;box-shadow:0 18px 50px rgba(11,20,64,.16);overflow:hidden;font-size:13px;color:#1b2240;aspect-ratio:1/1.414;display:flex;flex-direction:column}
-.qh{background:linear-gradient(115deg,#06135e 0%,#0b1f6b 58%,#0d3a9e 58.2%,#0d47a1 100%);color:#fff;padding:22px 24px;display:flex;justify-content:space-between;gap:12px;align-items:center}
-.qh .lg{display:flex;align-items:center;gap:10px}
-.qh .lg img{width:30px}
-.qh .co{font-family:Poppins,sans-serif;font-weight:700;font-size:18px;line-height:1.1}
-.qh .tag{font-size:9.5px;color:#b9c7f2;font-family:Poppins,sans-serif}
-.qh .tt{text-align:right}
-.qh .tt b{display:block;font-size:22px;line-height:1.2}
-.qh .tt span{display:block;font-family:Poppins,sans-serif;font-weight:700;color:var(--accent);font-size:11px;letter-spacing:2px}
-.qh .tt small{display:block;font-size:11px;margin-top:2px}
-.qb{padding:18px 24px;flex:1;display:flex;flex-direction:column}
-.parties{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.parties h4{margin:0 0 4px;color:var(--navy);font-size:14px}
-.parties p{margin:0;font-size:11.5px;line-height:1.55;word-break:break-word}
-.qdate{margin:14px 0 10px;color:var(--blue);font-weight:700;font-size:12.5px}
-table.qt{width:100%;border-collapse:collapse;font-size:11.5px}
-.qt th{background:var(--blue);color:#fff;font-weight:600;padding:7px 8px;text-align:left}
-.qt td{border-bottom:1px solid #e1e7f6;padding:7px 8px;vertical-align:top}
+.qdoc{background:#fff;border-radius:6px;box-shadow:0 18px 50px rgba(11,20,64,.16);overflow:visible;font-size:11px;color:#1b2240;aspect-ratio:1/1.414;display:flex;flex-direction:column;padding:22px 24px 0;line-height:1.45}
+.qdoc .en{display:block;font-family:Poppins,sans-serif;font-size:.78em;color:#7a84a8;font-weight:500;line-height:1.2}
+.qh{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;padding-bottom:12px;border-bottom:3px solid var(--navy)}
+.qh .lg{display:flex;gap:10px;align-items:flex-start;min-width:0}
+.qh .lg img{width:34px;flex:none;margin-top:2px}
+.qh .co{font-family:Poppins,sans-serif;font-weight:800;font-size:17px;line-height:1.1;color:var(--navy)}
+.qh .tag{font-size:8.5px;color:var(--blue);font-family:Poppins,sans-serif;font-weight:600;margin-bottom:3px}
+.qh .ad{font-size:9px;color:#4a5684;line-height:1.45}
+.qh .tt{flex:none;width:39%;border:1.5px solid var(--navy);border-radius:4px;overflow:hidden;text-align:center}
+.qh .tt .t1{background:var(--navy);color:#fff;padding:6px 8px}
+.qh .tt b{display:block;font-size:17px;line-height:1.25}
+.qh .tt .t1 span{display:block;font-family:Poppins,sans-serif;font-weight:700;color:var(--accent);font-size:9.5px;letter-spacing:2px}
+.qh .tt .t2{display:flex;font-size:10px}
+.qh .tt .t2>div{flex:1;padding:4px 6px}
+.qh .tt .t2>div+div{border-left:1px solid var(--line)}
+.qh .tt .no{font-family:Poppins,sans-serif;font-weight:700;color:var(--navy);font-size:11px}
+.qinfo{display:grid;grid-template-columns:1.25fr 1fr;border:1px solid #b9c5e6;margin-top:12px}
+.qinfo>div{padding:6px 9px}
+.qinfo>div+div{border-left:1px solid #b9c5e6}
+.qinfo dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 10px;margin:0}
+.qinfo dt{font-weight:700;color:var(--navy);white-space:nowrap}
+.qinfo dd{margin:0;word-break:break-word}
+table.qt{width:100%;border-collapse:collapse;margin-top:12px;font-size:10.5px}
+.qt th{background:var(--navy);color:#fff;font-weight:700;padding:5px 6px;text-align:center;line-height:1.3}
+.qt th .en{color:#b9c7f2}
+.qt td{border-left:1px solid #d3dbf0;border-right:1px solid #d3dbf0;padding:5px 7px;vertical-align:top;height:24px}
+.qt tbody tr:last-child td{border-bottom:1px solid #b9c5e6}
+.qt tbody tr:nth-child(even) td{background:#f6f8fe}
+.qt .c{text-align:center}
 .qt .r{text-align:right;white-space:nowrap}
-.qt .det{display:block;color:#6a7398;font-size:10px}
-.qt .empty td{color:#9aa3c4;text-align:center;padding:18px}
-.qsum{margin-top:12px;background:var(--navy);color:#fff;display:flex;justify-content:space-between;padding:9px 12px;font-weight:700;font-size:14px}
-.qnote{margin-top:12px;font-size:10.5px;color:#4a5684}
-.qnote b{color:var(--navy)}
-.qnote ul{margin:4px 0 0;padding-left:16px}
-.qf{margin-top:auto;background:linear-gradient(110deg,#fff 0 22%,#0b1f6b 22.2%);color:#fff;text-align:right;padding:12px 24px;font-weight:700;font-size:14px}
-.stamp{display:none;position:absolute}
+.qt .det{display:block;color:#6a7398;font-size:9px}
+.qtot{display:grid;grid-template-columns:minmax(0,1fr) 44%;gap:10px;margin-top:8px}
+.qwords{align-self:start;border:1px solid #b9c5e6;background:#f3f6fd;padding:6px 9px}
+.qwords b{color:var(--navy)}
+.qwords p{margin:3px 0 0;font-weight:700;color:var(--blue);font-size:11px}
+.qsums div{display:flex;justify-content:space-between;padding:4px 9px;border:1px solid #d3dbf0;border-top:0}
+.qsums div:first-child{border-top:1px solid #d3dbf0}
+.qsums .gt{background:var(--navy);color:#fff;font-weight:800;font-size:12.5px;border-color:var(--navy)}
+.qsums .gt .en{color:#b9c7f2}
+.qsums span:last-child{font-family:Poppins,sans-serif;font-weight:600;white-space:nowrap;align-self:center}
+.qnote{margin-top:10px;font-size:9.5px;color:#36406a}
+.qnote h5{margin:0 0 2px;font-size:10.5px;color:var(--navy)}
+.qnote ol{margin:0;padding-left:16px}
+.qbank{margin-top:6px;font-size:9.5px;white-space:pre-line}
+.qsign{display:grid;grid-template-columns:1fr 1fr 1fr;border:1px solid #b9c5e6;margin-top:auto;text-align:center;font-size:9.5px}
+.qsign>div{padding:8px 8px 6px;min-height:92px;display:flex;flex-direction:column;justify-content:flex-end}
+.qsign>div+div{border-left:1px solid #b9c5e6}
+.qsign .ln{border-top:1px dashed #6a7398;margin:0 6px 4px}
+.qsign .st{justify-content:center;color:#b0b9d6;font-size:9px}
+.qsign .st i{display:inline-block;width:62px;height:62px;border:1.5px dashed #c5cde6;border-radius:50%;line-height:62px;font-style:normal;margin:0 auto}
+.qf{margin:10px -24px 0;background:var(--navy);color:#fff;text-align:center;padding:7px 12px;font-size:10px}
+.qf b{color:var(--accent)}
+.qpg{text-align:right;font-size:8.5px;color:#9aa3c4;padding:3px 0 6px}
 @media(max-width:900px){.grid{grid-template-columns:minmax(0,1fr)}.sticky{position:static}.qdoc{aspect-ratio:auto}}
 @media print{
   @page{size:A4;margin:0}
@@ -87,7 +113,8 @@ table.qt{width:100%;border-collapse:collapse;font-size:11.5px}
   .wrap{padding:0;max-width:none}
   .grid{display:block}
   .sticky{position:static}
-  .qdoc{box-shadow:none;border-radius:0;width:210mm;height:296mm;overflow:hidden;aspect-ratio:auto;font-size:12.5px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .qf{margin:10px -13mm 0}
+  .qdoc{box-shadow:none;border-radius:0;width:210mm;height:296mm;overflow:hidden;aspect-ratio:auto;font-size:11.5px;padding:11mm 13mm 0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
 </style>
 </head>
@@ -135,25 +162,46 @@ table.qt{width:100%;border-collapse:collapse;font-size:11.5px}
     <div class="sticky">
       <article class="qdoc" id="qdoc" aria-label="ຕົວຢ່າງໃບສະເໜີລາຄາ">
         <div class="qh">
-          <div class="lg"><img src="media/logo-mark.png" alt=""><div><div class="co">PRO ADS LAOS</div><div class="tag">Growth up Your Business Together</div></div></div>
-          <div class="tt"><b>ໃບສະເໜີລາຄາ</b><span>QUOTATION</span><small>ເລກທີ: <i id="pno" style="font-style:normal">QT-xxxx</i></small></div>
+          <div class="lg"><img src="media/logo-mark.png" alt=""><div><div class="co">PRO ADS LAO</div><div class="tag">Growth up Your Business Together</div>
+            <div class="ad">ບ້ານໄຊນ້ຳເງິນ, ເມືອງໄຊທານີ, ນະຄອນຫຼວງວຽງຈັນ<br>ໂທ: +85620 789 996 88 · +85620 549 078 77<br>www.proadslaosdigital.com</div></div></div>
+          <div class="tt"><div class="t1"><b>ໃບສະເໜີລາຄາ</b><span>QUOTATION</span></div>
+            <div class="t2"><div>ເລກທີ <span class="en">No.</span><span class="no" id="pno">QT-xxxx</span></div><div>ຕົ້ນສະບັບ<span class="en">Original</span></div></div></div>
         </div>
-        <div class="qb">
-          <div class="parties">
-            <div><h4>ຈາກ:</h4><p>Pro Ads Lao<br>www.proadslaosdigital.com<br>+85620 789 996 88 · +85620 549 078 77<br>Saynumngern Village, Xaythany District, Vientiane Capital</p></div>
-            <div><h4>ສະເໜີໃຫ້:</h4><p><span id="pname">-</span><br>ໂທ: <span id="pphone">-</span><br><span id="paddr"></span></p></div>
-          </div>
-          <div class="qdate">ວັນທີ: <span id="pdate"></span> &nbsp;·&nbsp; ໃຊ້ໄດ້ຮອດ: <span id="pvalid"></span></div>
-          <table class="qt">
-            <thead><tr><th style="width:26px">#</th><th>ລາຍລະອຽດ</th><th class="r">ຈຳນວນ</th><th class="r">ລາຄາ</th><th class="r">ລວມ</th></tr></thead>
-            <tbody id="prows"><tr class="empty"><td colspan="5">ເລືອກບໍລິການທາງຊ້າຍ</td></tr></tbody>
-          </table>
-          <div class="qsum"><span>ລວມທັງໝົດ</span><span id="ptotal">0 ₭</span></div>
-          <div class="qnote"><b>ໝາຍເຫດ:</b> <span id="pnote">-</span>
-            <ul><li>ລາຄານີ້ໃຊ້ໄດ້ຮອດວັນທີ <span class="pvalid2"></span>.</li><li>ຄ່າໂຄສະນາ (ງົບຍິງແອັດ) ຄິດໄລ່ແຍກຕາມການໃຊ້ຈິງ, ຖ້າບໍ່ໄດ້ລະບຸໄວ້ໃນລາຍການ.</li><li>ເລີ່ມວຽກຫຼັງຈາກຢືນຢັນໃບສະເໜີລາຄາ ແລະ ຊຳລະເງິນຕາມທີ່ຕົກລົງ.</li></ul>
+        <div class="qinfo">
+          <div><dl>
+            <dt>ຊື່ລູກຄ້າ<span class="en">Customer</span></dt><dd id="pname">-</dd>
+            <dt>ເບີໂທ<span class="en">Phone</span></dt><dd id="pphone">-</dd>
+            <dt>ທີ່ຢູ່<span class="en">Address</span></dt><dd id="paddr">-</dd>
+          </dl></div>
+          <div><dl>
+            <dt>ວັນທີ<span class="en">Issue date</span></dt><dd id="pdate"></dd>
+            <dt>ໃຊ້ໄດ້ຮອດ<span class="en">Valid until</span></dt><dd id="pvalid"></dd>
+            <dt>ການຊຳລະ<span class="en">Payment</span></dt><dd id="ppay"></dd>
+          </dl></div>
+        </div>
+        <table class="qt">
+          <thead><tr><th style="width:9%">ລຳດັບ<span class="en">No.</span></th><th>ລາຍການ<span class="en">Description</span></th><th style="width:13%">ຈຳນວນ<span class="en">Qty</span></th><th style="width:17%">ລາຄາ/ໜ່ວຍ<span class="en">Unit price</span></th><th style="width:19%">ຈຳນວນເງິນ (ກີບ)<span class="en">Amount (LAK)</span></th></tr></thead>
+          <tbody id="prows"></tbody>
+        </table>
+        <div class="qtot">
+          <div class="qwords"><b>ຈຳນວນເງິນເປັນຕົວໜັງສື</b><span class="en">Amount in words</span><p id="pwords">-</p></div>
+          <div class="qsums">
+            <div><span>ລວມເປັນເງິນ<span class="en">Subtotal</span></span><span id="psub">0</span></div>
+            <div><span>ສ່ວນຫຼຸດ<span class="en">Discount</span></span><span id="pdisc">0</span></div>
+            <div class="gt"><span>ລວມທັງໝົດ<span class="en">Grand total</span></span><span id="ptotal">0 ₭</span></div>
           </div>
         </div>
-        <div class="qf">ຂອບໃຈທີ່ໄວ້ວາງໃຈ ແລະ ໃຊ້ບໍລິການຂອງພວກເຮົາ</div>
+        <div class="qnote"><h5>ໝາຍເຫດ ແລະ ເງື່ອນໄຂ <span style="font-weight:500;color:#7a84a8;font-family:Poppins,sans-serif">Terms &amp; Conditions</span></h5>
+          <ol><li id="pnoteli">ໝາຍເຫດຈາກລູກຄ້າ: <span id="pnote">-</span></li><li>ລາຄານີ້ໃຊ້ໄດ້ຮອດວັນທີ <span class="pvalid2"></span>.</li><li>ຄ່າໂຄສະນາ (ງົບຍິງແອັດ) ຄິດໄລ່ແຍກຕາມການໃຊ້ຈິງ, ຖ້າບໍ່ໄດ້ລະບຸໄວ້ໃນລາຍການ.</li><li>ເລີ່ມວຽກຫຼັງຈາກລູກຄ້າຢືນຢັນໃບສະເໜີລາຄາ ແລະ ຊຳລະເງິນຕາມເງື່ອນໄຂ.</li></ol>
+          <div class="qbank" id="pbank" hidden></div>
+        </div>
+        <div class="qsign">
+          <div><div class="ln"></div>ລູກຄ້າຢືນຢັນ / Customer<br>ວັນທີ ...... / ...... / ..........</div>
+          <div class="st"><i>ກາປະທັບ</i></div>
+          <div><div class="ln"></div>ຜູ້ສະເໜີລາຄາ / Pro Ads Lao<br>ວັນທີ ...... / ...... / ..........</div>
+        </div>
+        <div class="qf">ມີຄຳຖາມກ່ຽວກັບໃບສະເໜີລາຄານີ້ ຕິດຕໍ່: <b>020 5490 7877</b> · www.proadslaosdigital.com</div>
+        <div class="qpg">ໜ້າ 1/1</div>
       </article>
     </div>
   </div>
@@ -164,6 +212,9 @@ table.qt{width:100%;border-collapse:collapse;font-size:11.5px}
 var SCRIPT_URL = '';
 var WHATSAPP = '8562054907877';
 var VALID_DAYS = 7;
+var PAYMENT_TERM = 'ຊຳລະ 50% ກ່ອນເລີ່ມວຽກ, ສ່ວນທີ່ເຫຼືອເມື່ອວຽກສຳເລັດ';
+// ເລກບັນຊີທະນາຄານ (ປ່ອຍວ່າງ = ບໍ່ສະແດງ). ຖ້າເຊື່ອມ Google Sheet ແລ້ວ ຈະໃຊ້ຄ່າ BANK_INFO ຈາກ Settings ແທນ
+var BANK_INFO = '';
 
 var DEMO_SERVICES = [
   {id:'S01',category:'ເພຈ',name:'ຄ່າດູແລເພຈລາຍເດືອນ',detail:'ວາງແຜນຄອນເທັນ, ອອກແບບ, ໂພດ ແລະ ລາຍງານຜົນ',price:3000000,unit:'ເດືອນ'},
@@ -181,6 +232,7 @@ var DEMO_SERVICES = [
 var services = [], state = {};
 var $ = function(id){return document.getElementById(id)};
 var MONTHS = ['ມັງກອນ','ກຸມພາ','ມີນາ','ເມສາ','ພຶດສະພາ','ມິຖຸນາ','ກໍລະກົດ','ສິງຫາ','ກັນຍາ','ຕຸລາ','ພະຈິກ','ທັນວາ'];
+function num(n){return Math.round(n||0).toString().replace(/\B(?=(\d{3})+(?!\d))/g,',')}
 function money(n){return Math.round(n||0).toString().replace(/\B(?=(\d{3})+(?!\d))/g,',')+' ₭'}
 function ldate(d){return d.getDate()+' '+MONTHS[d.getMonth()]+' '+d.getFullYear()}
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
@@ -206,20 +258,35 @@ function renderServices(){
   });
 }
 
+function laoWords(n){
+  var D=['','ໜຶ່ງ','ສອງ','ສາມ','ສີ່','ຫ້າ','ຫົກ','ເຈັດ','ແປດ','ເກົ້າ'],P=['','ສິບ','ຮ້ອຍ','ພັນ','ໝື່ນ','ແສນ'];
+  n=Math.round(Math.abs(n||0));if(!n)return 'ສູນກີບຖ້ວນ';
+  function six(x){var t=String(x),o='',L=t.length;for(var i=0;i<L;i++){var d=+t[i],p=L-1-i;if(!d)continue;
+    if(p===1)o+=d===1?'ສິບ':d===2?'ຊາວ':D[d]+'ສິບ';else if(p===0&&d===1&&L>1)o+='ເອັດ';else o+=D[d]+P[p];}return o}
+  function w(x){if(x>=1e6){var r=x%1e6;return w(Math.floor(x/1e6))+'ລ້ານ'+(r?' '+six(r):'')}return six(x)}
+  return w(n)+'ກີບຖ້ວນ';
+}
 function lines(){return services.filter(function(s){return state[s.id]}).map(function(s){return {s:s,qty:state[s.id],total:s.price*state[s.id]}})}
 
 function preview(){
   var now=new Date(),valid=new Date(now.getTime()+VALID_DAYS*864e5);
   $('pname').textContent=$('name').value.trim()||'-';
   $('pphone').textContent=$('phone').value.trim()||'-';
-  $('paddr').textContent=$('address').value.trim();
+  $('paddr').textContent=$('address').value.trim()||'-';
   $('pnote').textContent=$('note').value.trim()||'-';
   $('pdate').textContent=ldate(now);$('pvalid').textContent=ldate(valid);
   document.querySelectorAll('.pvalid2').forEach(function(e){e.textContent=ldate(valid)});
+  $('ppay').textContent=PAYMENT_TERM;
+  $('pnoteli').hidden=!$('note').value.trim();
+  $('pbank').hidden=!BANK_INFO;$('pbank').textContent=BANK_INFO?'ບັນຊີທະນາຄານ: '+BANK_INFO:'';
   var L=lines(),tot=0,html='';
-  L.forEach(function(l,i){tot+=l.total;html+='<tr><td>'+(i+1)+'</td><td>'+esc(l.s.name)+(l.s.detail?'<span class="det">'+esc(l.s.detail)+'</span>':'')+'</td><td class="r">'+l.qty+(l.s.unit?' '+esc(l.s.unit):'')+'</td><td class="r">'+money(l.s.price)+'</td><td class="r">'+money(l.total)+'</td></tr>'});
-  $('prows').innerHTML=html||'<tr class="empty"><td colspan="5">ເລືອກບໍລິການທາງຊ້າຍ</td></tr>';
+  L.forEach(function(l,i){tot+=l.total;html+='<tr><td class="c">'+(i+1)+'</td><td>'+esc(l.s.name)+(l.s.detail?'<span class="det">'+esc(l.s.detail)+'</span>':'')+'</td><td class="c">'+l.qty+(l.s.unit?' '+esc(l.s.unit):'')+'</td><td class="r">'+num(l.s.price)+'</td><td class="r">'+num(l.total)+'</td></tr>'});
+  if(!L.length)html='<tr><td></td><td style="color:#9aa3c4">ເລືອກບໍລິການທາງຊ້າຍ</td><td></td><td></td><td></td></tr>';
+  for(var k=Math.max(L.length,1);k<9;k++)html+='<tr><td></td><td></td><td></td><td></td><td></td></tr>';
+  $('prows').innerHTML=html;
+  $('psub').textContent=num(tot);$('pdisc').textContent='0';
   $('ptotal').textContent=money(tot);
+  $('pwords').textContent=tot?laoWords(tot):'-';
 }
 ['name','phone','address','note'].forEach(function(id){$(id).addEventListener('input',preview)});
 
@@ -227,7 +294,7 @@ function load(){
   if(!SCRIPT_URL){$('demo').hidden=false;services=DEMO_SERVICES;renderServices();preview();return}
   fetch(SCRIPT_URL+'?action=services').then(function(r){return r.json()}).then(function(d){
     if(!d.ok)throw new Error(d.error||'load failed');
-    services=d.services||[];if(d.settings&&d.settings.validDays)VALID_DAYS=d.settings.validDays;renderServices();preview();
+    services=d.services||[];var st=d.settings||{};if(st.validDays)VALID_DAYS=st.validDays;if(st.paymentTerm)PAYMENT_TERM=st.paymentTerm;if(st.bankInfo)BANK_INFO=st.bankInfo;renderServices();preview();
   }).catch(function(){$('svc').innerHTML='<p class="msg err">ໂຫຼດລາຍການບໍລິການບໍ່ໄດ້ ກະລຸນາລອງໃໝ່ ຫຼື ທັກຫາທີມງານທາງ WhatsApp.</p>'});
 }
 
